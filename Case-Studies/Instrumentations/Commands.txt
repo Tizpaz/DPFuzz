@@ -1,0 +1,12 @@
+# Logistic Regression
+cd Logistic_Regression/
+python instrumentations.py ../inputs/job-output-LogisticRegression-2521832.out
+
+# Make Classification Data set
+cd Make_Classification/
+python instrumentations.py ../inputs/job-output-make-classification-2981139.out
+
+# Batch Generator
+cd Gen_batch
+python instrumentations.py ../inputs/job-output-gen-batches-2968286.out
+

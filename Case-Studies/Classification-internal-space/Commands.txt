@@ -1,0 +1,13 @@
+# Decision Tree for Logistic Regression
+python Classify.py --filename Examples/Logistic_Regression/LogisticRegression_instrumentations_newton-cg.csv --output Examples/Logistic_Regression/LogisticRegression_tree
+# Show decision tree version 0
+dot -Tpng Examples/Logistic_Regression/LogisticRegression_tree_tree0.dot -o Examples/Logistic_Regression/tree_0.png
+
+# Decision Tree for Make Multi Classification
+python Classify.py --filename Examples/make_multi_classification/make_multilabel_classification_instrumentations.csv --depth 2 --output Examples/make_multi_classification/make_multilabel_classification_tree
+# Show decision tree version 1
+dot -Tpng Examples/make_multi_classification/make_multilabel_classification_tree_tree1.dot -o Examples/make_multi_classification/tree_1.png
+
+# Decision Tree for Batch Generator
+python Classify.py --filename Examples/gen_batches/gen_Batches_instrumentations_labeled.csv --output Examples/gen_batches/gen_Batches_tree
+dot -Tpng Examples/gen_batches/gen_Batches_tree_tree0.dot -o Examples/gen_batches/tree_0.png

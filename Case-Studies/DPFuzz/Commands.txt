@@ -1,0 +1,28 @@
+# Case-study
+
+## Fuzzing with DPFuzz
+
+### Logistic Regression
+timeout 144m python driver.py --name LogisticRegression --size 100000 --clusters 4 --max_iter 200 --num_param 14 --size_index 0 > job-outputs/job-output-LogisticRegression-1.txt
+
+### Make Classification Data set
+timeout 240m python driver.py --name make_classification --size 10000 --clusters 4 --max_iter 200 --num_param 10 --size_index 0,1 > job-outputs/job-output-make-classification-1.txt
+
+### Batch Generation
+timeout 30m python driver.py --name gen_batches --size 1000 --clusters 2 --max_iter 200 --num_param 3 --size_index 0 > job-outputs/job-output-gen-batches-1.txt
+
+### Gaussian Process
+timeout 240m python driver.py --name GaussianProc --size 5000 --clusters 4 --max_iter 200 --num_param 14 --size_index 0 > job-outputs/job-output-GaussianProcess-1.txt
+
+### Mini-batch-kmeans
+timeout 240m python driver.py --name minibatch_kmeans --size 10000 --clusters 4 --max_iter 100 --num_param 15 --size_index 0,1,5 >  job-outputs/job-output-MiniBatchKmeans-1.txt
+
+### Tree Regressor
+timeout 240m python driver.py --name TreeRegressor --size 100000 --clusters 4 --max_iter 200 --num_param 15 --size_index 1,3 > job-outputs/job-output-TreeRegressor-1.txt
+
+### Discriminant Analysis
+timeout 240m python driver.py --name Discriminant_Analysis --size 100000 --clusters 4 --max_iter 500 --num_param 13 --size_index 0 > job-outputs/job-output-DiscriminantAnalysis-1.txt
+
+### Decision Tree
+timeout 240m python driver.py --name Decision_Tree_Classifier --size 100000 --clusters 4 --max_iter 200 --num_param 18 --size_index 0,1 > job-outputs/job-output-DecisionTree-1.txt
+

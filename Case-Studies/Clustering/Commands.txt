@@ -1,0 +1,15 @@
+# args[1] --> name of input file
+# args[2] --> # number of clusters
+# args[3] --> # maximum number of tolerance for disturbance
+# args[4] --> # whether write label to an output file
+# args[5] --> # = 1 based on the slope, = 2 based on distance (coefficient of determinations) # = 3 based on l-0 norm
+
+# Logistic Regression
+Rscript functional_clustering.R Examples/LogisticRegression_final_time.csv 4 3 1 1
+
+# Make Classification
+Rscript functional_clustering.R Examples/make_multi_classification_time_final_analysis.csv 5 3 1 1
+
+# Generate Batch
+Rscript functional_clustering.R Examples/gen_batches_final_time_analysis.csv 2 3 1 1
+

@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+ <inputs>
+   <!--n -->
+  <param0>
+    <name>Param0</name>
+    <type>int</type>
+    <min>1</min>
+    <max>10000</max>
+    <def>100</def>
+  </param0>
+  <!--batch_size -->
+  <param1>
+    <name>Param1</name>
+    <type>float</type>
+    <min>0.001</min>
+    <max>1000</max>
+    <def>1</def>
+  </param1>
+  <!--min_batch_size -->
+  <param2>
+    <name>Param2</name>
+    <type>int</type>
+    <min>0</min>
+    <max>100</max>
+    <def>0</def>
+  </param2>
+  <info>
+   <url>https://github.com/scikit-learn/scikit-learn/blob/master/sklearn/utils/__init__.py</url>
+   <MAX_SIZE>30</MAX_SIZE>
+   <MAX_POP_SIZE>5000</MAX_POP_SIZE>
+   <MAX_POP_SIZE_TOT>20000</MAX_POP_SIZE_TOT>
+   <Actual_Time>True</Actual_Time>
+   <INPUT_SIZE>False</INPUT_SIZE>
+   <MIN_NUM_PATH>8</MIN_NUM_PATH>
+   <STEPS_TO_KILL>100</STEPS_TO_KILL>
+   <NUM_ITER>200</NUM_ITER>
+   <TRIASL_EACH_ITER>200</TRIASL_EACH_ITER>
+   <NUM_PARAMETERS>3</NUM_PARAMETERS>
+   <SIZE_INDEX>0</SIZE_INDEX>
+   <CONSTANT_FACTOR>10</CONSTANT_FACTOR>
+  </info>
+</inputs>

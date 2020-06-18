@@ -1,0 +1,142 @@
+<?xml version="1.0"?>
+ <inputs>
+   <!--number of samples -->
+  <param0>
+    <name>Param0</name>
+    <type>int</type>
+    <min>1000</min>
+    <max>10000</max>
+    <def>1000</def>
+  </param0>
+  <!--number of features -->
+  <param1>
+    <name>Param1</name>
+    <type>int</type>
+    <min>2</min>
+    <max>50</max>
+    <def>10</def>
+  </param1>
+  <!--type of data generation -->
+  <param2>
+    <name>Param2</name>
+    <type>int</type>
+    <min>0</min>
+    <max>2</max>
+    <def>0</def>
+  </param2>
+  <!--n_clusters -->
+  <param3>
+    <name>Param3</name>
+    <type>int</type>
+    <min>2</min>
+    <max>20</max>
+    <def>2</def>
+  </param3>
+  <!--init -->
+  <param4>
+    <name>Param4</name>
+    <type>int</type>
+    <min>0</min>
+    <max>1</max>
+    <def>0</def>
+    <valtrans>k-means++</valtrans>
+    <valtrans>random</valtrans>
+  </param4>
+  <!--max_iter -->
+  <param5>
+    <name>Param5</name>
+    <type>int</type>
+    <min>10</min>
+    <max>100</max>
+    <def>10</def>
+  </param5>
+  <!--batch_size -->
+  <param6>
+    <name>Param6</name>
+    <type>int</type>
+    <min>1</min>
+    <max>200</max>
+    <def>100</def>
+  </param6>
+  <!--verbose -->
+  <param7>
+    <name>Param7</name>
+    <type>bool</type>
+    <min>0</min>
+    <max>0</max>
+    <def>0</def>
+  </param7>
+  <!--compute_labels -->
+  <param8>
+    <name>Param8</name>
+    <type>bool</type>
+    <min>0</min>
+    <max>1</max>
+    <def>1</def>
+  </param8>
+  <!--random_state -->
+  <param9>
+    <name>Param9</name>
+    <type>int</type>
+    <min>10</min>
+    <max>10</max>
+    <def>10</def>
+  </param9>
+  <!--tol -->
+  <param10>
+    <name>Param10</name>
+    <type>float</type>
+    <min>0.0</min>
+    <max>10.0</max>
+    <def>0.0</def>
+  </param10>
+  <!--max_no_improvement -->
+  <param11>
+    <name>Param11</name>
+    <type>int</type>
+    <min>1</min>
+    <max>100</max>
+    <def>10</def>
+  </param11>
+  <!--init_size -->
+  <param12>
+    <name>Param12</name>
+    <type>int</type>
+    <min>0</min>
+    <max>100</max>
+    <def>0</def>
+  </param12>
+  <!--n_init -->
+  <param13>
+    <name>Param13</name>
+    <type>int</type>
+    <min>1</min>
+    <max>100</max>
+    <def>3</def>
+  </param13>
+  <!--reassignment_ratio -->
+  <param14>
+    <name>Param14</name>
+    <type>float</type>
+    <min>0.0001</min>
+    <max>1.0</max>
+    <def>0.01</def>
+  </param14>
+
+
+  <info>
+   <url></url>
+   <MAX_SIZE>30</MAX_SIZE>
+   <MAX_POP_SIZE>5000</MAX_POP_SIZE>
+   <MAX_POP_SIZE_TOT>100000</MAX_POP_SIZE_TOT>
+   <Actual_Time>True</Actual_Time>
+   <INPUT_SIZE>False</INPUT_SIZE>
+   <MIN_NUM_PATH>16</MIN_NUM_PATH>
+   <STEPS_TO_KILL>1000</STEPS_TO_KILL>
+   <NUM_ITER>100</NUM_ITER>
+   <TRIASL_EACH_ITER>500</TRIASL_EACH_ITER>
+   <NUM_PARAMETERS>15</NUM_PARAMETERS>
+   <SIZE_INDEX>0,1,5</SIZE_INDEX>
+   <CONSTANT_FACTOR>2</CONSTANT_FACTOR>
+  </info>
+</inputs>
