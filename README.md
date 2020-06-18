@@ -18,7 +18,7 @@ cd Experiments/
 Here, let's focus on insertionX experiments. Others follow the same idea. To fuzz with DPFuzz:
 
 ```bash
-timeout 90m python driver.py --name insertionX --size 30 --clusters 3 --max_iter 1000 > sample_outcomes/job-output-insertionX-sort-1.out
+python driver.py --name insertionX --size 30 --clusters 3 --max_iter 1000 > sample_outcomes/job-output-insertionX-sort-1.out
 ```
 
 where we set the number of clusters to 3, the maximum size of array to 30, and maximum number of iteration of fuzzer to 1000 (under 90 mins timeout). You can find fuzzing for other benchmarks and also with
@@ -46,7 +46,7 @@ Let's start with fuzzing for Logistic Regression (this corresponds to the overvi
 
 ```bash
 cd DPFuzz
-timeout 144m python driver.py --name LogisticRegression --size 100000 --clusters 4 --max_iter 200 --num_param 14 --size_index 0 > job-outputs/job-output-LogisticRegression-1.txt
+python driver.py --name LogisticRegression --size 100000 --clusters 4 --max_iter 200 --num_param 14 --size_index 0 > job-outputs/job-output-LogisticRegression-1.txt
 ```
 
 here, we run fuzzer for 144 minutes (or a maximum of 200 iterations) where the maximum input size, clusters, library parameters are 100000, 4, and 14.
